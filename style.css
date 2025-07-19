@@ -1,0 +1,139 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #080808d6;
+    color: #0c0c0c;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #222;
+    color: rgba(185, 240, 218, 0.502);
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2em;
+  }
+  
+  .nav-links a {
+    color: rgb(172, 228, 194);
+    text-decoration: none;
+  }
+  
+  /* Hero */
+  .hero {
+    position: relative;
+    height: 95vh;
+    color: rgb(6, 5, 5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    background-image: url('Untitled design.png'); /* change this to your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 42, 42, 0.5); /* dark overlay for better text visibility */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: absolute;
+  top: 150px;
+  left: 70px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  z-index: 2;
+  }
+  
+  .hero-img {
+    display: none; /* hide original image since you're using it as background */
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  /* Section Style */
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgb(98, 95, 95);
+  }
+  
+  .section h2 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skills-list li {
+    list-style: none;
+    background: #b6c9ca;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* Projects */
+  .project {
+    background: #b6c9ca;
+    background: 9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button */
+  .btn {
+    background: #0066ff;
+    color: rgb(239, 228, 228);
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1em;
+    background: #222;
+    color: rgb(0, 0, 0);
+  }
+
